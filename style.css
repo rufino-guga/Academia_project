@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #0c122c, #060312);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: rgba(11, 1, 56, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+header img {
+    width: 90px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(77, 181, 255, 0.4));
+} 
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+header nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+}
+
+header nav ul a:hover {
+    color: #4db5ff;
+    text-shadow: 0 0 10px rgba(77, 181, 255, 0.6);
+}
+
+/* Seções */
+section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.titulo-secao {
+    text-align: center;
+    color: #4db5ff;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.templo {
+    background-color: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(77, 181, 255, 0.2);
+}
+
+/* Seção Aulas / Horários */
+#Aulas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(9, 5, 27, 0.8);
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid rgba(77, 181, 255, 0.2);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    border-color: #4db5ff;
+}
+
+.container .card-header {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4db5ff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+}
+
+.container p {
+    color: #ddd;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.mapa-container {
+    background: rgba(9, 5, 27, 0.8);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(77, 181, 255, 0.2);
+    text-align: center;
+}
+
+.mapa-container iframe {
+    border-radius: 12px;
+}
+
+.endereco {
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+/* Seção Planos */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.Planos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-plano {
+    background: rgba(11, 1, 56, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.card-plano:hover {
+    border-color: #4db5ff;
+    background: rgba(11, 1, 56, 0.9);
+}
+
+.card-plano h4 {
+    color: #4db5ff;
+    margin-bottom: 5px;
+}
+
+.card-plano span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+}
+
+.card-plano span small {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.Adquira {
+    background: linear-gradient(45deg, #039BE5, #4db5ff);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-top: 10px;
+}
+
+.Adquira:hover {
+    box-shadow: 0 0 15px rgba(77, 181, 255, 0.6);
+    transform: scale(1.02);
+}
+
+/* Benefícios Corporativos */
+.APP\'s {
+    background: rgba(9, 5, 27, 0.8);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgba(77, 181, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.APP\'s h4 {
+    color: #4db5ff;
+    text-align: center;
+}
+
+.app-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+#btn-app {
+    background: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    min-width: 110px;
+}
+
+#btn-app img {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #040114;
+    border-top: 1px solid rgba(77, 181, 255, 0.2);
+    padding: 40px 8% 20px 8%;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+}
+
+.footer-info h3 {
+    color: #4db5ff;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer-info p {
+    color: #aaa;
+    max-width: 350px;
+}
+
+.footer-links h4, .footer-contato h4 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.footer-links ul a {
+    color: #aaa;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links ul a:hover {
+    color: #4db5ff;
+}
+
+.footer-contato p {
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* Responsividade Básica */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #Aulas, .grid-container, .footer-container {
+        grid-template-columns: 1fr;
+    }
+} /* Botão e Imagem de Créditos no Rodapé */
+#btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0.8;
+}
+
+#btn:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+#btn img {
+    width: 130px; /* Tamanho ideal para rodapés */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
