@@ -24,6 +24,11 @@ body {
         padding: 15px 10px;
         gap: 15px;
     }
+    header img {
+    width: 90px;
+    height: auto;
+    filter: drop-shadow(0 0 5px rgba(77, 181, 255, 0.4));
+} 
 
     header nav ul {
         display: flex;
