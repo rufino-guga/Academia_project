@@ -14,44 +14,52 @@ body {
 }
 
 /* Header */
-/* Responsividade Ajustada */
-@media (max-width: 768px) {
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 10px;
-        gap: 15px;
-    }
-    header img {
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+    align-items: center;
+    padding: 15px 8%;
+    background-color: rgba(11, 1, 56, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+header img {
     width: 90px;
     height: auto;
     filter: drop-shadow(0 0 5px rgba(77, 181, 255, 0.4));
 } 
 
-    header nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px 15px;
-        padding: 0;
-        margin: 0;
-    }
+header nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 
-    header nav ul a {
-        font-size: 0.9rem;
-        padding: 4px 6px;
-    }
+header nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+}
 
-    #Aulas, .grid-container, .footer-container {
-        grid-template-columns: 1fr;
-    }
+header nav ul a:hover {
+    color: #4db5ff;
+    text-shadow: 0 0 10px rgba(77, 181, 255, 0.6);
+}
 
-    section {
-        width: 92%;
-        margin: 30px auto;
-    }
+/* Seções */
+section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 60px auto;
 }
 
 .titulo-secao {
@@ -278,6 +286,10 @@ footer {
 .footer-contato p {
     color: #aaa;
     margin-bottom: 8px;
+    & #btnInsta {
+        background-color: transparent;
+        color: #fff;
+    }
 }
 
 .footer-bottom {
@@ -289,15 +301,43 @@ footer {
 }
 
 /* Responsividade Básica */
+/* Responsividade Ajustada */
 @media (max-width: 768px) {
     header {
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 10px;
         gap: 15px;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul a {
+        font-size: 0.9rem;
+        padding: 4px 6px;
+    }
+
+    #Aulas, .grid-container, .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        width: 92%;
+        margin: 30px auto;
     }
     #Aulas, .grid-container, .footer-container {
         grid-template-columns: 1fr;
     }
-} /* Botão e Imagem de Créditos no Rodapé */
+ } /* Botão e Imagem de Créditos no Rodapé */
 #btn {
     background: transparent;
     border: none;
