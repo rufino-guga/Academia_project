@@ -145,6 +145,24 @@
                 <h4>Contato</h4>
                 <p>📞 (11) 99999-9999</p>
                 <p>✉️ contato@tysongym.com.br</p>
+                <button id="btnInsta">Instagram</button>
+                <style>
+                    #btnInsta {
+                    background: transparent;
+                    border: none;
+                    color: #fff; /* Exemplo de cor verde */
+                    text-decoration: underline;
+                    cursor: pointer;
+                    padding: 0;
+                    font: inherit;
+                    }
+                </style>
+                <script>
+                    const btn = document.querySelector("#btnInsta");
+                    btn.addEventListener("click", function(){
+                        window.open("https://www.instagram.com/academiatysongym/", "_blank");
+                    })
+                </script>
             </div>
         </div>
         <div class="footer-bottom">
