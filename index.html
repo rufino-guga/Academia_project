@@ -1,182 +1,678 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Tyson Gym</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <img src="./img/logo.png" alt="Tyson Gym Logo">
-        <nav>
+
+    <!-- =====================================================
+         HEADER / NAVBAR
+    ====================================================== -->
+
+    <header class="tyson-header">
+
+        <!-- LOGO -->
+        <a href="#templo" class="tyson-logo">
+            <img src="./img/logo.png" alt="Tyson Gym Logo">
+        </a>
+
+        <!-- MENU DESKTOP -->
+        <nav class="tyson-nav">
+
             <ul>
-                <li><a href="#templo">Templo</a></li>
-                <li><a href="#Aulas">Agendamentos</a></li>
-                <li><a href="#Planos">Planos</a></li>
-                <li><a href="#Nos">Sobre nós</a></li>
+                <li>
+                    <a href="#templo">Templo</a>
+                </li>
+
+                <li>
+                    <a href="#Aulas">Agendamentos</a>
+                </li>
+
+                <li>
+                    <a href="#Planos">Planos</a>
+                </li>
+
+                <li>
+                    <a href="#Nos">Quem somos nós</a>
+                </li>
             </ul>
+
         </nav>
+
+
+        <!-- BOTÃO DO MENU MOBILE -->
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton"
+            aria-label="Abrir menu"
+            aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
     </header>
 
+
+    <!-- =====================================================
+         MENU MOBILE
+    ====================================================== -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <nav>
+
+            <a href="#templo">
+                Templo
+            </a>
+
+            <a href="#Aulas">
+                Agendamentos
+            </a>
+
+            <a href="#Planos">
+                Planos
+            </a>
+
+            <a href="#Nos">
+                Quem somos nós
+            </a>
+
+            <a href="#Planos" class="mobile-cta">
+                QUERO TREINAR
+            </a>
+
+        </nav>
+
+    </div>
+
+
+    <!-- =====================================================
+         TEMPLO
+    ====================================================== -->
+
     <section id="templo">
+
         <div class="templo">
-            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+            <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
                 <div class="carousel-inner">
+
                     <div class="carousel-item active">
-                        <img src="./img/pic_primary.png" class="d-block w-100" alt="Fachada da academia">
+                        <img
+                            src="./img/pic_primary.png"
+                            class="d-block w-100"
+                            alt="Fachada da academia">
                     </div>
+
                     <div class="carousel-item">
-                        <img src="./img/pic_second.png" class="d-block w-100" alt="Foto da academia">
+                        <img
+                            src="./img/pic_second.png"
+                            class="d-block w-100"
+                            alt="Foto da academia">
                     </div>
+
                     <div class="carousel-item">
-                        <img src="./img/pic_tri.png" class="d-block w-100" alt="Foto da Academia">
+                        <img
+                            src="./img/pic_tri.png"
+                            class="d-block w-100"
+                            alt="Foto da Academia">
                     </div>
+
                     <div class="carousel-item">
-                        <img src="./img/pic_forth.png" class="d-block w-100" alt="Foto Academia">
+                        <img
+                            src="./img/pic_forth.png"
+                            class="d-block w-100"
+                            alt="Foto Academia">
                     </div>
+
                     <div class="carousel-item">
-                        <img src="./img/pic_five.png" class="d-block w-100" alt="Foto Academia">
+                        <img
+                            src="./img/pic_five.png"
+                            class="d-block w-100"
+                            alt="Foto Academia">
                     </div>
+
                     <div class="carousel-item">
-                        <img src="./img/pic_six.png" class="d-block w-100" alt="Foto Academia">
+                        <img
+                            src="./img/pic_six.png"
+                            class="d-block w-100"
+                            alt="Foto Academia">
                     </div>
+
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+
+
+                <!-- BOTÃO ANTERIOR -->
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+
+                    <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Previous
+                    </span>
+
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+
+
+                <!-- BOTÃO PRÓXIMO -->
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+
+                    <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true">
+                    </span>
+
+                    <span class="visually-hidden">
+                        Next
+                    </span>
+
                 </button>
+
             </div>
+
         </div>
+
     </section>
+
+
+    <!-- =====================================================
+         AULAS / HORÁRIOS
+    ====================================================== -->
 
     <section id="Aulas">
+
         <div class="container">
-            <div class="card-header">Nossos horários</div>
-            <div>
-                <p>Funcionamos de segunda a sábado</p>
-                <p><strong>Seg-Sex:</strong> 07h às 12h e 14h às 22h</p>
-                <p><strong>Sábado:</strong> 09h às 11h</p>
+
+            <div class="card-header">
+                Nossos horários
             </div>
-            
-            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-            <script>
-            (function() {
-                var target = document.currentScript;
-                window.addEventListener('load', function() {
-                    calendar.schedulingButton.load({
-                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0mqNeaX_qk_iyonxcj2ozgqRbvVOdTPLq_ZWMivzwHEGEI1W-olxsgGoCy8MbHbPvl9HVSySjH?gv=true',
-                        color: '#039BE5',
-                        label: 'Agendar Aula',
-                        target,
-                    });
-                });
-            })();
+
+            <div>
+
+                <p>
+                    Funcionamos de segunda a sábado
+                </p>
+
+                <p>
+                    <strong>Seg-Sex:</strong>
+                    07h às 12h e 14h às 22h
+                </p>
+
+                <p>
+                    <strong>Sábado:</strong>
+                    09h às 11h
+                </p>
+
+            </div>
+
+
+            <!-- GOOGLE CALENDAR -->
+
+            <link
+                href="https://calendar.google.com/calendar/scheduling-button-script.css"
+                rel="stylesheet">
+
+            <script
+                src="https://calendar.google.com/calendar/scheduling-button-script.js"
+                async>
             </script>
+
+            <script>
+
+                (function () {
+
+                    var target = document.currentScript;
+
+                    window.addEventListener('load', function () {
+
+                        calendar.schedulingButton.load({
+
+                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ0mqNeaX_qk_iyonxcj2ozgqRbvVOdTPLq_ZWMivzwHEGEI1W-olxsgGoCy8MbHbPvl9HVSySjH?gv=true',
+
+                            color: '#039BE5',
+
+                            label: 'Agendar Aula',
+
+                            target: target,
+
+                        });
+
+                    });
+
+                })();
+
+            </script>
+
         </div>
+
+
+        <!-- =================================================
+             MAPA
+        ================================================== -->
 
         <div class="mapa-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d469409.573708678!2d-46.895748329647866!3d-23.19710983961411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cecbbcb39b7371%3A0x3ae341fbde26b0eb!2sTyson%20Gym!5e0!3m2!1spt-BR!2sbr!4v1787443585779!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            <p class="endereco">📍 Rua Dr. Josmar Fantini de Oliveira, 305 - Jardim do Cedro, Bragança Paulista - SP</p>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d469409.573708678!2d-46.895748329647866!3d-23.19710983961411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cecbbcb39b7371%3A0x3ae341fbde26b0eb!2sTyson%20Gym!5e0!3m2!1spt-BR!2sbr!4v1787443585779!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="300"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+            <p class="endereco">
+                📍 Rua Dr. Josmar Fantini de Oliveira, 305 -
+                Jardim do Cedro, Bragança Paulista - SP
+            </p>
+
         </div>
+
     </section>
+
+
+    <!-- =====================================================
+         PLANOS
+    ====================================================== -->
 
     <section id="Planos">
-        <h2 class="titulo-secao">Conheça Nossos Planos</h2>
+
+        <h2 class="titulo-secao">
+            Conheça Nossos Planos
+        </h2>
+
+
         <div class="grid-container">
+
+
+            <!-- PLANOS -->
+
             <div class="item">
+
                 <div class="Planos">
+
+
+                    <!-- MENSAL -->
+
                     <div class="card-plano mes">
-                        <h4>Plano Mensal</h4>
-                        <p>Plano recorrente. Acesso total à nossa academia.</p>
-                        <span>R$ 90,00 <small>/mês</small></span>
+
+                        <h4>
+                            Plano Mensal
+                        </h4>
+
+                        <p>
+                            Plano recorrente.
+                            Acesso total à nossa academia.
+                        </p>
+
+                        <span>
+                            R$ 90,00
+                            <small>/mês</small>
+                        </span>
+
                     </div>
+
+
+                    <!-- SEMESTRAL -->
+
                     <div class="card-plano semestre">
-                        <h4>Plano Semestral</h4>
-                        <p>Economise R$ 10,00 por mês com acesso total.</p>
-                        <span>R$ 480,00 <small>/semestre</small></span>
+
+                        <h4>
+                            Plano Semestral
+                        </h4>
+
+                        <p>
+                            Economise R$ 10,00 por mês
+                            com acesso total.
+                        </p>
+
+                        <span>
+                            R$ 480,00
+                            <small>/semestre</small>
+                        </span>
+
                     </div>
+
+
+                    <!-- DIÁRIA -->
+
                     <div class="card-plano diaria">
-                        <h4>Diária</h4>
-                        <p>Um treino com acesso completo à nossa academia.</p>
-                        <span>R$ 20,00</span>
+
+                        <h4>
+                            Diária
+                        </h4>
+
+                        <p>
+                            Um treino com acesso completo
+                            à nossa academia.
+                        </p>
+
+                        <span>
+                            R$ 20,00
+                        </span>
+
                     </div>
-                    <button class="Adquira">Adquira já!</button>
+
+
+                    <button class="Adquira">
+                        Adquira já!
+                    </button>
+
                 </div>
+
             </div>
-            
+
+
+            <!-- =================================================
+                 WELLHUB / TOTALPASS
+            ================================================== -->
+
             <div class="APP's">
+
                 <div class="card-header">
-                    <h4>Treine Conosco pelo Seu Benefício Corporativo</h4>
+
+                    <h4>
+                        Treine Conosco pelo Seu
+                        Benefício Corporativo
+                    </h4>
+
                 </div>
+
+
+                <!-- WELLHUB -->
+
                 <div class="app-card">
-                    <button id="btn-app" class="btn-well"><img src="./img/well.png" alt="Wellhub"></button>
-                    <p>Nosso templo de treinamento está disponível no Wellhub (Gympass).</p>
+
+                    <button
+                        id="btn-app"
+                        class="btn-well">
+
+                        <img
+                            src="./img/well.png"
+                            alt="Wellhub">
+
+                    </button>
+
+                    <p>
+                        Nosso templo de treinamento
+                        está disponível no
+                        <strong>Wellhub (Gympass)</strong>.
+                    </p>
+
                 </div>
+
+
+                <!-- TOTALPASS -->
+
                 <div class="app-card">
-                    <button id="btn-app" class="btn-total"><img src="./img/total.png" alt="TotalPass"></button>
-                    <p>Nosso templo de treinamento está disponível no TotalPass.</p>
+
+                    <button
+                        id="btn-app"
+                        class="btn-total">
+
+                        <img
+                            src="./img/total.png"
+                            alt="TotalPass">
+
+                    </button>
+
+                    <p>
+                        Nosso templo de treinamento
+                        está disponível no
+                        <strong>TotalPass</strong>.
+                    </p>
+
                 </div>
+
             </div>
+
         </div>
+
     </section>
 
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
     <footer id="Nos">
+
         <div class="footer-container">
+
+
+            <!-- INFORMAÇÕES -->
+
             <div class="footer-info">
-                <h3>TYSON GYM</h3>
-                <p>O templo de treinamento feito para superar seus limites diários. Venha fazer parte da nossa família.</p>
+
+                <h3>
+                    TYSON GYM
+                </h3>
+
+                <p>
+                    O templo de treinamento feito para
+                    superar seus limites diários.
+                    Venha fazer parte da nossa família.
+                </p>
+
             </div>
+
+
+            <!-- NAVEGAÇÃO -->
+
             <div class="footer-links">
-                <h4>Navegação</h4>
+
+                <h4>
+                    Navegação
+                </h4>
+
                 <ul>
-                    <li><a href="#templo">Templo</a></li>
-                    <li><a href="#Aulas">Agendamentos</a></li>
-                    <li><a href="#Planos">Planos</a></li>
+
+                    <li>
+                        <a href="#templo">
+                            Templo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#Aulas">
+                            Agendamentos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#Planos">
+                            Planos
+                        </a>
+                    </li>
+
                 </ul>
+
             </div>
+
+
+            <!-- CONTATO -->
+
             <div class="footer-contato">
-                <h4>Contato</h4>
-                <p>📞 (11) 99999-9999</p>
-                <p>✉️ contato@tysongym.com.br</p>
-                <button id="btnInsta">Instagram</button>
-                <style>
-                    #btnInsta {
-                    background: transparent;
-                    border: none;
-                    color: #fff; /* Exemplo de cor verde */
-                    text-decoration: underline;
-                    cursor: pointer;
-                    padding: 0;
-                    font: inherit;
-                    }
-                </style>
-                <script>
-                    const btn = document.querySelector("#btnInsta");
-                    btn.addEventListener("click", function(){
-                        window.open("https://www.instagram.com/academiatysongym/", "_blank");
-                    })
-                </script>
+
+                <h4>
+                    Contato
+                </h4>
+
+                <p>
+                     (11) 99999-9999
+                </p>
+
+                <p>
+                     contato@tysongym.com.br
+                </p>
+
+                <button id="btnInsta">
+                    Instagram
+                </button>
+
             </div>
+
         </div>
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
         <div class="footer-bottom">
-            <div class="footer-bottom">
-    <button id="btn" onclick="abrirWhatsApp()">
-        <img src="./img/My_logo.png" alt="Desenvolvido por GUHRU">
-    </button>
+
+            <button
+                id="btn"
+                onclick="abrirWhatsApp()">
+
+                <img
+                    src="./img/My_logo.png"
+                    alt="Desenvolvido por GUHRU">
+
+            </button>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
     <script>
+
+        /* ==========================================
+           MENU MOBILE
+        ========================================== */
+
+        const menuButton =
+            document.getElementById("mobileMenuButton");
+
+        const mobileMenu =
+            document.getElementById("mobileMenu");
+
+
+        menuButton.addEventListener("click", function () {
+
+            menuButton.classList.toggle("active");
+
+            mobileMenu.classList.toggle("active");
+
+
+            const aberto =
+                menuButton.classList.contains("active");
+
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                aberto
+            );
+
+        });
+
+
+        /* ==========================================
+           FECHAR MENU AO CLICAR EM UMA OPÇÃO
+        ========================================== */
+
+        const mobileLinks =
+            mobileMenu.querySelectorAll("a");
+
+
+        mobileLinks.forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                menuButton.classList.remove("active");
+
+                mobileMenu.classList.remove("active");
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+
+            });
+
+        });
+
+
+        /* ==========================================
+           INSTAGRAM
+        ========================================== */
+
+        const btnInstagram =
+            document.querySelector("#btnInsta");
+
+
+        btnInstagram.addEventListener("click", function () {
+
+            window.open(
+                "https://www.instagram.com/academiatysongym/",
+                "_blank"
+            );
+
+        });
+
+
+        /* ==========================================
+           WHATSAPP
+        ========================================== */
+
         function abrirWhatsApp() {
-            window.open("https://wa.me/5511975709591?text=Olá,%20curti%20um%20site%20que%20você%20criou,%20Vamos%20fazer%20um%20orçamento!", "_blank");
+
+            window.open(
+                "https://wa.me/5511975709591?text=Olá,%20curti%20um%20site%20que%20você%20criou,%20Vamos%20fazer%20um%20orçamento!",
+                "_blank"
+            );
+
         }
+
     </script>
+
+
+    <!-- BOOTSTRAP -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+
+    <!-- SEU SCRIPT -->
+
     <script src="/Script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</div>
+
 </body>
+
 </html>
