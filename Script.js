@@ -81,9 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         btnInstagram.addEventListener("click", function () {
 
-            window.open(
-                "https://www.instagram.com/tk_academia_dit/"
-            );
+            window.open("https://www.instagram.com/tk_academia_dit/");
 
         });
         /* ==========================================
@@ -91,8 +89,5 @@ document.addEventListener("DOMContentLoaded", function () {
         ========================================== */
         function abrirWhatsApp() {
 
-            window.open(
-                "https://wa.me/5511975709591?text=Olá,%20curti%20um%20site%20que%20você%20criou,%20Vamos%20fazer%20um%20orçamento!"
-            );
-
-        }
+            window.open("https://wa.me/5511975709591?text=Olá,%20curti%20um%20site%20que%20você%20criou,%20Vamos%20fazer%20um%20orçamento!");
+        };
