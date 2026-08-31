@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (Total) {
         Total.addEventListener("click", function (e) {
             e.preventDefault();
-            window.open("https://totalpass.com/br/academias/tk-academia/", "_blank");
+            window.open("https://totalpass.com/br/academias/a-fit-academia-9e245ea4-42de-45fd-93e6-fa1d454e5cb3/", "_blank");
         });
     }
 
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (Well) {
         Well.addEventListener("click", function (e) {
             e.preventDefault();
-            window.open("https://wellhub.com/pt-br/search/partners/tk-academia-braganca-paulista/?utm_content=Consideration_Text_Keywords_Wellhub-Gyms&gad_source=1&gclid=Cj0KCQjwhsrUBhDxARIsAN3AQSf42tGxWswA0_pSW7dkENGCWfA0VC46eAN3Obce2Rizfbf8ONLYV40aAvb2EALw_wcB&utm_medium=paid&utm_campaign=latam-br_b2c_google-search-brand-partners-wellhub_con_ongoing_all_signup_0326&utm_source=google&utm_term=paid-academias%20com%20wellhub", "_blank");
+            window.open("https://wellhub.com/pt-br/search/partners/afit-academia-jardim-morumbi/", "_blank");
         });
     }
 
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (btnInstagram) {
         btnInstagram.addEventListener("click", function (e) {
             e.preventDefault();
-            window.location.href = "https://www.instagram.com/tk_academia_dit/";
+            window.location.href = "https://www.instagram.com/afit.academia01/";
         });
     }
 
