@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (Total) {
         Total.addEventListener("click", function (e) {
             e.preventDefault();
-            window.open("https://totalpass.com/br/academias/academia-work-gym/", "_blank");
+            window.open("https://totalpass.com/br", "_blank");
         });
     }
 
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (Well) {
         Well.addEventListener("click", function (e) {
             e.preventDefault();
-            window.open("https://wellhub.com/pt-br/search/partners/workgym-academia-vila-santa-libania/", "_blank");
+            window.open("https://wellhub.com/pt-br", "_blank");
         });
     }
 
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (btnInstagram) {
         btnInstagram.addEventListener("click", function (e) {
             e.preventDefault();
-            window.location.href = "https://www.instagram.com/academiaworkgymbraganca/";
+            window.location.href = "https://www.instagram.com/guh_ab_/";
         });
     }
 
