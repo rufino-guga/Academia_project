@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const Well = document.querySelector(".btn-well");
     const Ad = document.querySelector(".Adquira");
     const btnInstagram = document.querySelector("#btnInsta");
+    const nameInput = document.querySelector("#name");
+    const planoSelect = document.querySelector("#matricula");
 
     /* ==========================================
        1. TOTALPASS (Abre em nova aba)
@@ -11,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (Total) {
         Total.addEventListener("click", function (e) {
             e.preventDefault();
-            window.open("https://totalpass.com/br/academias/a-fit-academia-9e245ea4-42de-45fd-93e6-fa1d454e5cb3/", "_blank");
+            window.open("https://totalpass.com/br/academias/academia-work-gym/", "_blank");
         });
     }
 
@@ -21,17 +23,33 @@ document.addEventListener("DOMContentLoaded", function () {
     if (Well) {
         Well.addEventListener("click", function (e) {
             e.preventDefault();
-            window.open("https://wellhub.com/pt-br/search/partners/afit-academia-jardim-morumbi/", "_blank");
+            window.open("https://wellhub.com/pt-br/search/partners/workgym-academia-vila-santa-libania/", "_blank");
         });
     }
 
     /* ==========================================
-       3. ADQUIRA / WHATSAPP (Abre o app direto sem about:blank)
+       3. ADQUIRA / WHATSAPP (Mensagem personalizada)
     ========================================== */
     if (Ad) {
         Ad.addEventListener("click", function (e) {
             e.preventDefault();
-            window.location.href = "https://wa.me/5511975709591?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20planos!";
+
+            let mensagem = "Olá, gostaria de saber mais sobre os planos!";
+
+            // Se os campos existirem na página, monta mensagem personalizada
+            if (nameInput && planoSelect) {
+                const nome = nameInput.value.trim();
+                const plano = planoSelect.value;
+
+                if (nome !== "" && plano !== "") {
+                    mensagem = `Olá, meu nome é ${nome}, quero me matricular no plano ${plano}. Quero começar a evoluir!`;
+                } else {
+                    alert("Por favor, preencha seu nome e escolha um plano.");
+                    return;
+                }
+            }
+
+            window.location.href = `https://wa.me/5511975709591?text=${encodeURIComponent(mensagem)}`;
         });
     }
 
@@ -41,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (btnInstagram) {
         btnInstagram.addEventListener("click", function (e) {
             e.preventDefault();
-            window.location.href = "https://www.instagram.com/afit.academia01/";
+            window.location.href = "https://www.instagram.com/academiaworkgymbraganca/";
         });
     }
 
